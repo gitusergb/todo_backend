@@ -13,7 +13,7 @@ const getTodos = async (req, res) => {
     const endIndex = pageNumber * limitNumber;
   
   try { 
-    const todos = await todo.find({})
+    const todos = await todo.find()
   const paginatedtodos = todos.slice(startIndex, endIndex);
   //res.json(paginatedtodos);
     // res.status(200).send(todos);
