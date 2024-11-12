@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Routes
-app.use('/todos', todoRouter);
+app.use('/todos',todoRouter);
 
 // Server port
 const PORT = process.env.PORT || 5000;
