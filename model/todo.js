@@ -9,6 +9,6 @@ const todoSchema = new mongoose.Schema({
   versionKey:false
 });
 
-const todo = mongoose.model('todos',todoSchema);
+const todos = mongoose.model('todo',todoSchema);
 
-module.exports = todo;
+module.exports = todos;
