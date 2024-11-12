@@ -25,12 +25,6 @@ const getTodos = async (req, res) => {
 };
 
 
-// app.addtodo('/tasks', (req, res) => {
-//     const task = { id: Date.now(), ...req.body };
-//     tasks.push(task);
-//     res.status(201).json(task);
-// });
-// Add a new todo
 const addTodo = async (req, res) => {
     try { 
         const todo= new todo(req.body)
